@@ -1,39 +1,101 @@
 body
 {
-	background-color: lightblue;
+	background-color: white;
 
 	font-family: Arial, sans-serif;
+	font-size: 100%;
 }
 
 .Introduction
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 
-	height: 50vh;
-	width: 60vw;
+	/* Make different sizes for PC / mobile*/
+	height: 700px;	/*Change when there is enough text to use the whole image*/
 	margin-left: auto;
 	margin-right: auto;
 
-	border: 3px solid green;
-
+	background-image: url("technology-background-white.png");
 }
 
-.Introduction h1
+.Introduction .Text
 {
-	font-size: 5vw;
-
+	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
+	border: 0.3em solid black;
+	border-radius: 20%;
+
+	text-align: center;
 }
 
-.Introduction p
+.Introduction .Text h1
 {
+	margin-top: 0.5em;
+
+	font-size: 5em;
+}
+
+.Introduction .Text p
+{
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+
 	font-family: Arial, sans-serif;
-	font-size: 2vw;
+	font-size: 2em;
+}
 
+/*Projects*/
+
+.Section_Title
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	height: 15em;
+	background-color: #add8e6;
+}
+
+.Section_Title h2
+{
+	font-size: 3em;
+	width: 4em;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0px;
+}
+
+.project_descriptions
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+
+	border: solid green;
+}
+
+.project_descriptions table
+{
+	width: 100%;
+}
+
+.project_descriptions .SignalGen .Text h2
+{
+	font-size: 2em;
+}
+
+.project_descriptions .SignalGen .Image
+{
+	width: 30%;
+}
+
+.project_descriptions .SignalGen .Image img
+{
+	width: 100%;
 }
