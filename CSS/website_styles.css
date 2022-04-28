@@ -40,8 +40,7 @@ body
 
 	/* Make different sizes for PC / mobile*/
 	height: 43em;	/*Change when there is enough text to use the whole image*/
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 
 	background-image: url("technology-background-white.png");
 }
@@ -89,7 +88,7 @@ body
 .Section_Title h2
 {
 	font-size: 3em;
-	width: 4em;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -109,7 +108,13 @@ body
 	width: 100%;
 }
 
-.project_descriptions .Text h2
+
+.project_descriptions .Text a
+{
+	color: black;
+	text-decoration: none;
+}
+.project_descriptions .Text a h2
 {
 	font-size: 2em;
 }

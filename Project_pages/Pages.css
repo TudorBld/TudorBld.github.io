@@ -1,0 +1,54 @@
+.About
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+
+    font-size: 1.2em;
+
+    width: 100%;
+
+    background-color: #D2ECF5;
+}
+
+.About p
+{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 0em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.About ul
+{
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.About img
+{
+    margin: 0.3em;
+    border: 20px solid #FCA17D;
+    border-radius: 20px;
+
+    align-self: center;
+    width: 700px;
+}
+
+.About .Gallery
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.About .Gallery img
+{
+    align-self: center;
+
+    width: 400px;
+}
