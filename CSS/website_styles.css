@@ -17,11 +17,19 @@ body
 	background-color: #add8e6;
 	border-bottom: 0.1em solid black;
 }
-.TopRibbon h2
+.TopRibbon a
 {
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-left: 1em;
+	margin-left: 1.5em;
+
+	text-decoration: none;
+	color: black;
+
+	background-color:#FCA17D;
+	border-radius: 3em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
 }
 
 .Introduction
