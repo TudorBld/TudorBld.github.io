@@ -47,19 +47,20 @@ body
 
 .Introduction .Text
 {
-	background-color: white;
+	min-width: 400px;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: white;
 	border: 0.3em solid black;
-	border-radius: 20%;
-
-	text-align: center;
+	border-radius: 20px;
 }
 
 .Introduction .Text h1
 {
 	margin-top: 0.5em;
-
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 	font-size: 5em;
 }
 
