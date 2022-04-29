@@ -93,7 +93,7 @@ body
 	margin-right: auto;
 }
 
-.project_descriptions
+/* .project_descriptions
 {
 	display: flex;
 	justify-content: center;
@@ -101,16 +101,26 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-}
+} */
 
-.project_descriptions table
+.project_descriptions
 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	width: 100%;
 }
 
-
+.project_descriptions .Text
+{
+	width: 800px;
+	border: 20px solid #F8FA90;
+    border-radius: 20px;
+}
 .project_descriptions .Text a
 {
+	text-align: center;
 	color: black;
 	text-decoration: none;
 }
@@ -121,25 +131,47 @@ body
 
 .project_descriptions .Image
 {
-	width: 30%;
+	width: 500px;
 }
 
 .project_descriptions .Image img
 {
+	align-self: center;
 	width: 100%;
+	border: 20px solid #F8FA90;
+    border-radius: 20px;
 }
 
 .project_descriptions .SignalGen
 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
 	background-color: #FCA17D;
+	border-top: solid black;
+	border-bottom: solid black;
 }
 
 .project_descriptions .ChessClock
 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
 	background-color: #D2ECF5;
+	border-bottom: solid black;
 }
 
 .project_descriptions .Tricorder
 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
 	background-color: #FCA17D;
+	border-bottom: solid black;
 }
