@@ -12,24 +12,89 @@ body
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	height: 5em;
 	background-color: #add8e6;
 	border-bottom: 0.1em solid black;
 }
-.TopRibbon a
+.TopRibbon .Home
 {
-	margin-top: auto;
-	margin-bottom: auto;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.TopRibbon .Home a
+{
+	height: 100%;
 	margin-left: 1.5em;
-
+	font-size: 1.5em;
 	text-decoration: none;
+	font-weight: bold;
 	color: black;
 
 	background-color:#FCA17D;
 	border-radius: 3em;
 	padding-left: 0.3em;
 	padding-right: 0.3em;
+}
+.TopRibbon .Home h2
+{
+	font-size: 0.95em;
+	text-align: center;
+	line-height: 100%;
+}
+.TopRibbon .Home:hover a{background-color: #ce8061;}
+
+.TopRibbon .dropbtn
+{
+	background-color: #04AA6D;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+}
+.TopRibbon .dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+.TopRibbon .dropdown_content
+{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.TopRibbon .dropdown_content a
+{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+/* Change color of dropdown links on hover */
+.TopRibbon .dropdown_content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.TopRibbon .dropdown:hover .dropdown_content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.TopRibbon .dropdown:hover .dropbtn {background-color: #3e8e41; border-radius: 0px;}
+
+#empty
+{
+	content: '.';
+	visibility: hidden;
+
+	height: 100%;
+	width: 40%;
+	border: solid green;
 }
 
 .Introduction
