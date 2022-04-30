@@ -37,6 +37,16 @@
     align-self: center;
     width: 700px;
 }
+.About video
+{
+    margin: 0.3em;
+    border: 20px solid #FCA17D;
+    border-radius: 20px;
+
+    align-self: center;
+    max-width: 700px; 
+    max-height: 700px;
+}
 
 .About .Gallery
 {

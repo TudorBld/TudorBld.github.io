@@ -54,41 +54,104 @@
 
         <div class="Section_Title">
             <h2>
-                About the tricorder
+                About the signal generator
             </h2>
         </div>
 
         <div class="About">
             <p>
-                I've been watching Star Trek since I was a kid and I always loved the different points of view on the world 
-                the series explains.<br>
-                A point of view that is not explained but merely shown is the tehnical side of the sensors they use. 
-                One day I thought about what it woud feel like to use a hand-held scanner that could detect lots of things. 
-                A tricorder.
+                The most awaited part of school this semester is the electronic devices lab. There, we test the newly learned
+                circuits with the help of a power supply, a signal generator and an osciloscope.
             </p>
             <p>
-                And I decided to build one.<br>
-                I bought a toy tricorder to see how it feels and I LOVED IT.
+                A power supply can be anything. And I have a crude osciloscope. Cârnaț Darian, my colegue,  
+                asked if we could build a signal generator. At first I tought it would be too hard, after all, 
+                signal generators are big, expensive devices. But after 
+                thinking about it, it became clear such a project is well within the realm of reality.
             </p>
             <p>
-                The end goal of the project is a sensor array. It should measure:
+                The end goal of the project is a voltage signal generator. It should:
                 <ul>
-                    <li>Air temperature</li>
-                    <li>Air humidity</li>
-                    <li>Air pressure</li>
-                    <li>Temperature of scanned object</li>
-                    <li>Acceleration on x, y, z axis</li>
-                    <li>GPS coordinates</li>
+                    <li>Output frequencys between 1 and 1000 Hz</li>
+                    <li>Have an output amplitude between -15V and +15V</li>
+                    <li>Have easily accessible output connectors</li>
+                    <li>Display current (as in present) frequency</li>
+                    <li>Be easy to operate / move.</li>
+                    <li>Be robust</li>
                 </ul>
             </p>
             <p>
-                NOTICE! The project is by no means ready, nor does it look ready. A tehnical problem with the power delivery circuits
-                during the final assembly burned some essential components and I had to disassamble everything to trace the issue.
+                NOTICE! The project is not yet ready. We currently work on building a PCB and a case around the working circuit.
             </p>
-            <img id="prot_1" src="prototip_1.jpg">
-            <img id="prot_2" src="prototip_5.jpg">
+            <img id="bread_1" src="breadboard_1.jpg">
         </div>
 
+        <div class="Section_Title">
+            <h2>
+                Electronics
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                In this project, Darian and I used knowledge learned at "electronic devices", our favorite topic this semester.
+                At the heart of the device lays an operational amplifier which commutes the output between the positive and
+                negative voltage supplyed by the batteries.<br>
+                That was actually the biggest problem. How do we get both positive and negative output? The Op Amp is a saviour.
+            </p>
+            <img id="sim_1" src="sim_1.png">
+            <p>
+                Perfect would be for the generated signal to mimic a sine wave. We however settled on a sawtooth. The effect is made 
+                by 2 capacitors whose charging and discharging cycles round the corners of the signal. We can choose between 
+                the 2 of them according to the output frequency.
+            </p>
+            <img id="osc_1" src="osciloscope_1.jpg">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Mechanics
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                The PCB is currently in developement, therefore the case is not yet designed.
+            </p>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Programing
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                The problem we faced in programing the arduino is the 4 microseconds clock speed at witch arduino fuctions. 
+                Therefore we limited the maximum output frequency to 1KHz.
+            </p>
+            <img id="code_1" src="code_1.png">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Gallery
+            </h2>
+        </div>
+
+        <div class="About">
+            <video controls>
+                <source src="Frequency_video_1.mp4" type="video/mp4">
+                Your browser does not support the video tag. Try a different browser.
+            </video>
+            <video controls muted>
+                <source src="Frequency_video_2.mp4" type="video/mp4">
+                Your browser does not support the video tag. Try a different browser.
+            </video>
+            <img id="code_1" src="code_1.png">
+            <img id="OpAmp_1" src="OpAmp_1.jpg">
+        </div>
 
     </body>
 
