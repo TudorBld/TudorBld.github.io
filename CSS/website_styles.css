@@ -208,6 +208,18 @@ body
     border-radius: 20px;
 }
 
+.project_descriptions .CableTester
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #D2ECF5;
+	border-top: solid black;
+	border-bottom: solid black;
+}
+
 .project_descriptions .SignalGen
 {
 	display: flex;
@@ -216,7 +228,6 @@ body
 	flex-wrap: wrap;
 	width: 100%;
 	background-color: #FCA17D;
-	border-top: solid black;
 	border-bottom: solid black;
 }
 

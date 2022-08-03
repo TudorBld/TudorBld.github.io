@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Cable Tester</title>
+        <link rel="stylesheet" href="../../CSS/website_styles.css">
+        <link rel="stylesheet" href="../Pages.css">
+        <link rel="stylesheet" href="CableTester.css">
+    </head>
+
+    <body>
+
+        <div class="TopRibbon">
+
+            <div class="Home">
+                <a href="https://tudorbld.github.io/">
+                    <h2>
+                        Baldean Tudor
+                    </h2>
+                </a>
+            </div>
+
+            <div id="empty">
+
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown_content">
+
+                    <a href="https://tudorbld.github.io/Project_pages/SignalGen/SignalGen.html">
+                        Signal generator
+                    </a>
+                    <a href="https://tudorbld.github.io/Project_pages/ChessClock/ChessClock.html">
+                        Chess clock
+                    </a>
+                    <a href="https://tudorbld.github.io/Project_pages/Tricorder/Tricorder.html">
+                        Tricorder
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Introduction">
+
+            <div class="Text">
+                <h1>
+                    Cable tester
+                </h2>
+            </div>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                About the cable tester
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                A factory from Cluj, called "Renolith", was in need of a cable tester for a cable with many wires inside.<br>
+                Due to good relations with the "Applied Informatics" university teacher at UTCN, they opted to fund the 
+                building of such a device, so that one student can glimpse at the world of electronics engeneering.
+            </p>
+            <p>
+                As it turnes out, that student was I. It was a great oportunity to learn, so I did not turn it down.
+            </p>
+            <p>
+                The end goal of the project is a Cable tester for multiple wire cables. It does:
+            </p>
+            <ul>
+                <li>Check for typical and less typical wire errors:</li>
+                <ul>
+                    <li>Mismach type errors</li>
+                    <li>Open circuit type errors</li>
+                    <li>Multiple outputs type errors</li>
+                    <li>Short circuit type errors</li>
+                </ul>
+
+                <li>Provide an easy to read interface for operators</li>
+            </ul>
+            <img id="Arduino_shield_prototype" src="Arduino_shield_prototype.jpg">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Electronics
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                The problems encountered in the area of electronics are the high number of wires, and such the 
+                high numbers of components used, and the uncertainty of how many led need to be powered by an arduino pin. 
+                Due to the high number wires, using a controll circuit for each one of them was out of the question)<br>
+                The interface consists of a LED for each wire, a master OK LED, a master ERROR LED and 2 buttons (reset, next).
+                The wire LED-s light up wether signal is sent trough the wire or recived.
+            </p>
+            <img id="wd_1" src="wd_1.png">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Mechanics
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                I designed the chassis in a 3d modeling program called "Blender" and printed it on an "Ender 3 Pro" with the 
+                help of "Cura" slicer. The chassis is made of two main parts held together by M3 screws.<br>
+                The front holds the LCD and the buttons while the back holds the batteries.
+            </p>
+            <img id="chassis_1" src="chassis_1.jpg">
+            <img id="chassis_2" src="chassis_2.jpg">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Programing
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                The code for the arduino was written both by Simon and myself, however Simon had more contributions.<br>
+                The 1500 lines are divided into 8 different files, have been worked on with 
+                the help of version control system "git" and are stored on a "github" page. The repository is however 
+                not public. Some of my lines are:
+                <ul>
+                    <li>The code for detecting button presses</li>
+                    <li>The code for showing deciseconds</li>
+                    <li>The code for the dice mode</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Gallery
+            </h2>
+        </div>
+
+        <div class="About">
+            <img id="breadboard_1" src="breadboard_1.jpg">
+            <img id="cb_1" src="cb_1.jpg">
+
+            <video controls>
+                <source src="video_1_medium.mp4">
+                Your browser does not support video tags. Try another browser.
+            </video>
+
+            <img id="chassis_3" src="chassis_3.jpg">
+            <img id="timer_1" src="timer_1.jpg">
+            <img id="dice_1" src="dice_1.jpg">
+        </div>
+
+    </body>
+
+</html>
