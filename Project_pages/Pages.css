@@ -26,6 +26,14 @@
     width: 100%;
     margin-left: 20%;
     margin-right: 10%;
+    margin-bottom: 0;
+}
+.About ul ul
+{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0;
 }
 
 .About img
