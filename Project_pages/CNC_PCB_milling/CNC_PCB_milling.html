@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CNC for PCB milling</title>
+        <link rel="stylesheet" href="../../CSS/website_styles.css">
+        <link rel="stylesheet" href="../Pages.css">
+        <!--<link rel="stylesheet" href="CableTester.css">-->
+    </head>
+
+    <body>
+
+        <div class="TopRibbon">
+
+            <div class="Home">
+                <a href="https://tudorbld.github.io/">
+                    <h2>
+                        Baldean Tudor
+                    </h2>
+                </a>
+            </div>
+
+            <div id="empty">
+
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown_content">
+
+                    <a href="https://tudorbld.github.io/Project_pages/SignalGen/SignalGen.html">
+                        Signal generator
+                    </a>
+                    <a href="https://tudorbld.github.io/Project_pages/ChessClock/ChessClock.html">
+                        Chess clock
+                    </a>
+                    <a href="https://tudorbld.github.io/Project_pages/Tricorder/Tricorder.html">
+                        Tricorder
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Introduction">
+
+            <div class="Text">
+                <h1>
+                    CNC station for PCB milling
+                </h2>
+            </div>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                About the CNC milling station
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                Seeing how long it takes to build a project, I began to look for ways to shorten that time. 
+                I reaslised I need to split the projects in two parts:<br>
+            </p>
+            <p>
+                1. Design: I need to design all aspects of a project on a computer. That is because of the physical limitations 
+                that time and space impose on me. By achieving this I can use but one tool for any aspect of a project.<br>
+            <p>
+                2. Production: After the design is ready and tested via simulations, it must be implemented in an 
+                automated way, so that it requires as little time as possible and can be repetable.
+            </p>
+            <p>
+                After researching methods for PCB production I chose milling because it requires no dangereous chemicals 
+                and most of the production process is automated. 
+            </p>
+            
+            <p>
+                The end goal of this project is a CNC milling station. Is should:
+            </p>
+            <ul>
+                <li>Have a high enough precision for milling DIP and SOIC packages</li>
+                <li>Have safety elements implemented (emergency button, electrical safetys, ...)</li>
+                <li>Be mobile (should have wheels for easy movement)</li>
+                <li>Have space for all tools required for producing PCB-s</li>
+            </ul>
+            <img id="Arduino_shield_prototype" src="Arduino_shield_prototype.jpg">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Mechanical aspects
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                Compared to other projects that I worked on, this one consists mainly on designing and phisically building 
+                the CNC. So, this chapter of the description is the longest.
+            </p>
+            <h3>
+                Design
+            </h3>
+            <p>
+                I began working on the CNC in the spirit of the idea presented above: first design and then build.
+                For mechanical design I used OnShape with the student account I have.<br>
+                Designing the station took a rather long time, about 4 months. But, after these 4 months I was ready to build 
+                and the digital model of the station allowed me to measure any distance on any part. Building was much
+                easier this way.
+            </p>
+            <img id="3d_model" src="3d_model.png">
+            <img id="Measurement" src="Measurement.png">
+            <p>
+                The chassis is made of alluminum profiles for strength and ease of assembly.<br>
+                The more complex parts are made of wood because wood is easier to machine and I don't really have tools for 
+                working in metal. The only metal parts that I made myself are the mounts for the stepper motors, 
+                because the mounting type I used is not standard and I had to make my own mounts.
+            </p>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Mechanics
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                I designed the chassis in a 3d modeling program called "Blender" and printed it on an "Ender 3 Pro" with the 
+                help of "Cura" slicer. The chassis is made of two main parts held together by M3 screws.<br>
+                The front holds the LCD and the buttons while the back holds the batteries.
+            </p>
+            <img id="chassis_1" src="chassis_1.jpg">
+            <img id="chassis_2" src="chassis_2.jpg">
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Programing
+            </h2>
+        </div>
+
+        <div class="About">
+            <p>
+                The code for the arduino was written both by Simon and myself, however Simon had more contributions.<br>
+                The 1500 lines are divided into 8 different files, have been worked on with 
+                the help of version control system "git" and are stored on a "github" page. The repository is however 
+                not public. Some of my lines are:
+                <ul>
+                    <li>The code for detecting button presses</li>
+                    <li>The code for showing deciseconds</li>
+                    <li>The code for the dice mode</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="Section_Title">
+            <h2>
+                Gallery
+            </h2>
+        </div>
+
+        <div class="About">
+            <img id="breadboard_1" src="breadboard_1.jpg">
+            <img id="cb_1" src="cb_1.jpg">
+
+            <video controls>
+                <source src="video_1_medium.mp4">
+                Your browser does not support video tags. Try another browser.
+            </video>
+
+            <img id="chassis_3" src="chassis_3.jpg">
+            <img id="timer_1" src="timer_1.jpg">
+            <img id="dice_1" src="dice_1.jpg">
+        </div>
+
+    </body>
+
+</html>
