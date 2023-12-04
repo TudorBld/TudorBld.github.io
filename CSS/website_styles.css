@@ -149,6 +149,9 @@ body
 
 	height: 15em;
 	background-color: #add8e6;
+
+	border-top: solid black;
+	border-bottom: solid black;
 }
 
 .Section_Title h2
@@ -208,6 +211,17 @@ body
     border-radius: 20px;
 }
 
+.project_descriptions .CNC_PCB_milling
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #FCA17D;
+	border-bottom: solid black;
+}
+
 .project_descriptions .CableTester
 {
 	display: flex;
@@ -216,7 +230,6 @@ body
 	flex-wrap: wrap;
 	width: 100%;
 	background-color: #D2ECF5;
-	border-top: solid black;
 	border-bottom: solid black;
 }
 
