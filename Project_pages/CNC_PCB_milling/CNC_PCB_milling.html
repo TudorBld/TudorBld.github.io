@@ -5,7 +5,7 @@
         <title>CNC for PCB milling</title>
         <link rel="stylesheet" href="../../CSS/website_styles.css">
         <link rel="stylesheet" href="../Pages.css">
-        <!--<link rel="stylesheet" href="CableTester.css">-->
+        <link rel="stylesheet" href="CNC_PCB_milling.css">
     </head>
 
     <body>
@@ -28,6 +28,9 @@
                 <button class="dropbtn">Projects</button>
                 <div class="dropdown_content">
 
+                    <a href="https://tudorbld.github.io/Project_pages/CNC_PCB_milling/CNC_PCB_milling.html">
+                        CNC station for PCB milling
+                    </a>
                     <a href="https://tudorbld.github.io/Project_pages/SignalGen/SignalGen.html">
                         Signal generator
                     </a>
@@ -60,31 +63,31 @@
 
         <div class="About">
             <p>
-                Seeing how long it takes to build a project, I began to look for ways to shorten that time. 
+                Seeing how long it takes to build a project, I began to look for ways to speed it up. 
                 I reaslised I need to split the projects in two parts:<br>
             </p>
             <p>
-                1. Design: I need to design all aspects of a project on a computer. That is because of the physical limitations 
-                that time and space impose on me. By achieving this I can use but one tool for any aspect of a project.<br>
+                1. Design: I need to design all aspects of a project on the computer. It is much easyer to design and 
+                simulate on a computer than to build, test and rebuild everything.<br>
             <p>
-                2. Production: After the design is ready and tested via simulations, it must be implemented in an 
-                automated way, so that it requires as little time as possible and can be repetable.
+                2. Production: After the design is ready and tested in simulations, it must be implemented in an 
+                automated way, so that it requires as little time as possible and the process is repetable.
             </p>
             <p>
                 After researching methods for PCB production I chose milling because it requires no dangereous chemicals 
-                and most of the production process is automated. 
+                and most of the fabrication process is automated. 
             </p>
             
             <p>
                 The end goal of this project is a CNC milling station. Is should:
             </p>
             <ul>
-                <li>Have a high enough precision for milling DIP and SOIC packages</li>
+                <li>Have a high enough precision for milling around DIP and SOIC packages</li>
                 <li>Have safety elements implemented (emergency button, electrical safetys, ...)</li>
                 <li>Be mobile (should have wheels for easy movement)</li>
-                <li>Have space for all tools required for producing PCB-s</li>
+                <li>Have space for all tools required in the production of PCB-s</li>
             </ul>
-            <img id="Arduino_shield_prototype" src="Arduino_shield_prototype.jpg">
+            <img id="Statie" src="Statie.jpg">
         </div>
 
         <div class="Section_Title">
@@ -95,7 +98,8 @@
 
         <div class="About">
             <p>
-                Compared to other projects that I worked on, this one consists mainly on designing and phisically building 
+                Compared to other projects that I worked on, this one consists mainly on mechanical 
+                design and phisically building 
                 the CNC. So, this chapter of the description is the longest.
             </p>
             <h3>
@@ -103,19 +107,57 @@
             </h3>
             <p>
                 I began working on the CNC in the spirit of the idea presented above: first design and then build.
-                For mechanical design I used OnShape with the student account I have.<br>
-                Designing the station took a rather long time, about 4 months. But, after these 4 months I was ready to build 
+                For mechanical design I used a student OnShape account.<br>
+                Designing the station took a rather long time, about 4 months. But, after these 4 months I was ready to build, 
                 and the digital model of the station allowed me to measure any distance on any part. Building was much
                 easier this way.
             </p>
-            <img id="3d_model" src="3d_model.png">
-            <img id="Measurement" src="Measurement.png">
+            <img class = "mechanical_pic" id="3d_model" src="3d_model.png">
+            <img class = "mechanical_pic" id="Measurement" src="Measurement.png">
+            <p>
+                One of the biggest chalanges I encountered while designing this station was finding parts and components 
+                that both fit together and are available commercially (and don't break the bank). The final shopping list 
+                was very long, and I had to both order and phisically buy parts from at least 5 speciality shops.
+            </p>
             <p>
                 The chassis is made of alluminum profiles for strength and ease of assembly.<br>
+                Because milling PCB-s does not put a lot of stress on the milling head, I opted to use pairs of guiding 
+                rods as opposed to linear guides, because the rods are cheaper.
+            </p>
+            <p>
                 The more complex parts are made of wood because wood is easier to machine and I don't really have tools for 
                 working in metal. The only metal parts that I made myself are the mounts for the stepper motors, 
-                because the mounting type I used is not standard and I had to make my own mounts.
+                because the way I attached the motors is not standard and I had to make my own mounts.
             </p>
+            <img class = "mechanical_pic" id="Motor_mount_pair" src="Motor_mount_pair.jpg">
+            <img class = "mechanical_pic" id="Motor_mount" src="Motor_mount.jpg">
+            <h3>
+                Production and Assembly
+            </h3>
+            <p>
+                At the time of building this machine I was (and still am) part of the "Bright Students" program at Bosch Cluj 
+                Plant. So I had time to build this machine only on saturdays. With 1 day a week, building the station lasted 
+                the whole summer.<br>
+                But with each passing week the machine was closer to being ready.
+            </p>
+            <p>
+                Measuring, drawing, cuting, drilling, screwing, unscrewing, adjusting and fixing, slowly but surley each 
+                pice was ready and assembled.
+            </p>
+            <img class = "mechanical_pic" id="Axa_y_pending" src="Axa_y_pending.jpg">
+            <img class = "mechanical_pic" id="Almost_all_axes_done" src="Almost_all_axes_done.jpg">
+            <p>
+                After a long summer and a lot of work, the CNC was assembled.<br>
+                Mechanically, the CNC was ready, but the controll circuitry was not. Also, the CNC was not yet a CNC station. 
+                So, before talking about the controll circuitry, I'l talk a bit about the bench that I built for the CNC.
+            </p>
+            <p>
+                While working at Bosch Cluj Plant I saw just how convinient it is for each tool to have it's place, 
+                and for each table or larger station to have wheels for  easy transportation. That is why I wanted 
+                to build a CNC station, not just a CNC. And is also the reason my station has wheels.
+            </p>
+            <img class = "mechanical_pic" id="Masa_pe_dos" src="Masa_pe_dos.jpg">
+            <img class = "mechanical_pic" id="Masa_fara_roti" src="Masa_fara_roti.jpg">
         </div>
 
         <div class="Section_Title">
