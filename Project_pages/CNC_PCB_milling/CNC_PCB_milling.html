@@ -162,37 +162,52 @@
 
         <div class="Section_Title">
             <h2>
-                Mechanics
+                Control circuitry
             </h2>
         </div>
 
         <div class="About">
             <p>
-                I designed the chassis in a 3d modeling program called "Blender" and printed it on an "Ender 3 Pro" with the 
-                help of "Cura" slicer. The chassis is made of two main parts held together by M3 screws.<br>
-                The front holds the LCD and the buttons while the back holds the batteries.
+                The electric part of the project can be divided in 2 parts: power and control.
             </p>
-            <img id="chassis_1" src="chassis_1.jpg">
-            <img id="chassis_2" src="chassis_2.jpg">
+            <p>
+                Looking on the control side, 
+                the most common solution on the internet is using an arduino with a CNC control shield. However, I
+                recently replaced the old motherboard of my Ender3 3D printer and while replacing it I noticed that it uses an 
+                AtMega microprocessor. So, I wanted to use the old motherboard instead.<br>
+                After figuring out how to burn a bootloader on the board, I tracked every digital IO pin on the board 
+                to figure out what it is connected to and uploaded a version of <a href="https://github.com/Paciente8159/uCNC">μCNC</a>
+                to the microcontroller.<br>
+                It took a little bit of figuring out what everything does, but in the 
+                end it worked.
+            </p>
+            <p>
+                On the power side, main power is supplied by a 24V 3Amp rail mounted power supply. The power supply 
+                is mounted inside an electrical box, alogside the differential fuse, the ovecurrent fuse and a power switch.
+            </p>
+            <p>
+                I wanted to have a profesional look and a safe design. That is why all electrical and electronic components 
+                are mounted inside boxes, the power circuit is fuse protected and placed inside an electrical box with 
+                locker.
+            </p>
+            <img class = "electrical_pic" id = "Ender3_Board.jpg" src = "Ender3_Board.jpg">
+            <img class = "electrical_pic" id = "Electrical_box" src = "Electrical_box.jpg">
         </div>
 
         <div class="Section_Title">
             <h2>
-                Programing
+                A few more words about this project
             </h2>
         </div>
 
         <div class="About">
             <p>
-                The code for the arduino was written both by Simon and myself, however Simon had more contributions.<br>
-                The 1500 lines are divided into 8 different files, have been worked on with 
-                the help of version control system "git" and are stored on a "github" page. The repository is however 
-                not public. Some of my lines are:
-                <ul>
-                    <li>The code for detecting button presses</li>
-                    <li>The code for showing deciseconds</li>
-                    <li>The code for the dice mode</li>
-                </ul>
+                This project required more time than any other personal project I worked on before. It was difficult from 
+                many points of view: 3d design, electronic reverse-engineering, building. The hardest part was by far 
+                the design process. That is because of the high number of 
+                problems that required solutions, because of the limited number of solutions I am capable to actually 
+                implement and because of the limited amount of solutions I can buy (either because of lack of stock or 
+                because of high prices).
             </p>
         </div>
 
