@@ -3,9 +3,25 @@
     <head>
         <Title>Baldean Tudor</Title>
 		<link rel="stylesheet" href="CSS/website_styles.css">
+
+        <script>
+            function display()
+            {
+                function getYearDiff(date1, date2)
+                {
+                    return Math.abs(date2.getFullYear() - date1.getFullYear());
+                }
+
+                var varsta_par = document.getElementById("varsta")
+                var age = getYearDiff(new Date(), new Date("2002-05-18"))
+                varsta_par.innerHTML = "My name is Băldean Tudor<br>I am " + age + " years old.<br>My passions are electronics and networking."
+            }
+        </script>
+
+
     </head>
 
-    <body>
+    <body onLoad = "display()">
 
         <div class="TopRibbon">
 
@@ -49,7 +65,7 @@
                 <h1>
                     Hello!
                 </h2>
-                <p>
+                <p id = "varsta">
                     My name is Băldean Tudor<br>
                     <!--make a script for displaying age-->
                     I am 20 years old.<br>
