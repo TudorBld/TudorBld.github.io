@@ -64,17 +64,17 @@
         <div class="About">
             <p>
                 Seeing how long it takes to build a project, I began to look for ways to speed it up. 
-                I reaslised I need to split the projects in two parts:<br>
+                I realised I need to split the projects in two parts:<br>
             </p>
             <p>
-                1. Design: I need to design all aspects of a project on the computer. It is much easyer to design and 
+                1. Design: I need to design all aspects of a project on the computer. It is much easier to design and 
                 simulate on a computer than to build, test and rebuild everything.<br>
             <p>
                 2. Production: After the design is ready and tested in simulations, it must be implemented in an 
-                automated way, so that it requires as little time as possible and the process is repetable.
+                automated way, so that it requires as little time as possible, and the process is repeatable.
             </p>
             <p>
-                After researching methods for PCB production I chose milling because it requires no dangereous chemicals 
+                After researching methods for PCB production, I chose milling because it requires no dangerous chemicals 
                 and most of the fabrication process is automated. 
             </p>
             
@@ -83,7 +83,7 @@
             </p>
             <ul>
                 <li>Have a high enough precision for milling around DIP and SOIC packages</li>
-                <li>Have safety elements implemented (emergency button, electrical safetys, ...)</li>
+                <li>Have safety elements implemented (emergency button, electrical safeties, ...)</li>
                 <li>Be mobile (should have wheels for easy movement)</li>
                 <li>Have space for all tools required in the production of PCB-s</li>
             </ul>
@@ -99,7 +99,7 @@
         <div class="About">
             <p>
                 Compared to other projects that I worked on, this one consists mainly on mechanical 
-                design and phisically building 
+                design and physically building 
                 the CNC. So, this chapter of the description is the longest.
             </p>
             <h3>
@@ -115,18 +115,18 @@
             <img class = "mechanical_pic" id="3d_model" src="3d_model.png">
             <img class = "mechanical_pic" id="Measurement" src="Measurement.png">
             <p>
-                One of the biggest chalanges I encountered while designing this station was finding parts and components 
+                One of the biggest challenges I encountered while designing this station was finding parts and components 
                 that both fit together and are available commercially (and don't break the bank). The final shopping list 
-                was very long, and I had to both order and phisically buy parts from at least 5 speciality shops.
+                was very long, and I had to both order and physically buy parts from at least 5 speciality shops.
             </p>
             <p>
-                The chassis is made of alluminum profiles for strength and ease of assembly.<br>
+                The chassis is made of aluminum profiles for strength and ease of assembly.<br>
                 Because milling PCB-s does not put a lot of stress on the milling head, I opted to use pairs of guiding 
                 rods as opposed to linear guides, because the rods are cheaper.
             </p>
             <p>
-                The more complex parts are made of wood because wood is easier to machine and I don't really have tools for 
-                working in metal. The only metal parts that I made myself are the mounts for the stepper motors, 
+                The more complex parts are made of wood because wood is easier to machine, and I don't really have tools for 
+                working in metal. The only metal parts that I made myself are the mounts for the stepper motors 
                 because the way I attached the motors is not standard and I had to make my own mounts.
             </p>
             <img class = "mechanical_pic" id="Motor_mount_pair" src="Motor_mount_pair.jpg">
@@ -136,23 +136,23 @@
             </h3>
             <p>
                 At the time of building this machine I was (and still am) part of the "Bright Students" program at Bosch Cluj 
-                Plant. So I had time to build this machine only on saturdays. With 1 day a week, building the station lasted 
+                Plant. So, I had time to build this machine only on Saturdays. With 1 day a week, building the station lasted 
                 the whole summer.<br>
                 But with each passing week the machine was closer to being ready.
             </p>
             <p>
-                Measuring, drawing, cuting, drilling, screwing, unscrewing, adjusting and fixing, slowly but surley each 
-                pice was ready and assembled.
+                Measuring, drawing, cutting, drilling, screwing, unscrewing, adjusting, and fixing, slowly but surely each 
+                piece was ready and assembled.
             </p>
             <img class = "mechanical_pic" id="Axa_y_pending" src="Axa_y_pending.jpg">
             <img class = "mechanical_pic" id="Almost_all_axes_done" src="Almost_all_axes_done.jpg">
             <p>
                 After a long summer and a lot of work, the CNC was assembled.<br>
-                Mechanically, the CNC was ready, but the controll circuitry was not. Also, the CNC was not yet a CNC station. 
-                So, before talking about the controll circuitry, I'l talk a bit about the bench that I built for the CNC.
+                Mechanically, the CNC was ready, but the control circuitry was not. Also, the CNC was not yet a CNC station. 
+                So, before talking about the control circuitry, I'll talk a bit about the bench that I built for the CNC.
             </p>
             <p>
-                While working at Bosch Cluj Plant I saw just how convinient it is for each tool to have it's place, 
+                While working at Bosch Cluj Plant I saw just how convenient it is for each tool to have its place, 
                 and for each table or larger station to have wheels for  easy transportation. That is why I wanted 
                 to build a CNC station, not just a CNC. And is also the reason my station has wheels.
             </p>
@@ -172,7 +172,7 @@
             </p>
             <p>
                 Looking on the control side, 
-                the most common solution found on the internet is using an arduino with a CNC control shield. However, I
+                the most common solution found on the internet is using an Arduino with a CNC control shield. However, I
                 recently replaced the old motherboard of my Ender3 3D printer and while replacing it I noticed that it uses an 
                 AtMega microcontroller. So, I wanted to use the old motherboard instead.<br>
                 After figuring out how to burn a bootloader on the board, I tracked every digital IO pin on the board 
@@ -183,10 +183,10 @@
             </p>
             <p>
                 On the power side, main power is supplied by a 24V 3Amp rail mounted power supply. The power supply 
-                is mounted inside an electrical box, alogside the differential fuse, the ovecurrent fuse and a power switch.
+                is mounted inside an electrical box, alongside the differential fuse, the overcurrent fuse, and a power switch.
             </p>
             <p>
-                I wanted to have a profesional look and a safe design. That is why all electrical and electronic components 
+                I wanted to have a professional look and a safe design. That is why all electrical and electronic components 
                 are mounted inside boxes, the power circuit is fuse protected and placed inside an electrical box with 
                 locker.
             </p>

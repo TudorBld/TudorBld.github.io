@@ -116,7 +116,7 @@ body
 {
 	min-width: 400px;
 	max-height: 400px;
-	height: auto;
+	height:min-content;
 	text-align: center;
 	background-color: white;
 	border: 0.3em solid black;

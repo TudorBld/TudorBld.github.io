@@ -66,12 +66,12 @@
 
         <div class="About">
             <p>
-                A factory from Cluj, called "Renolith", was in need of a cable tester for a cable with many wires inside.<br>
+                A factory from Cluj, called "Renolith", needed of a cable tester for a cable with many wires inside.<br>
                 Due to good relations with the "Applied Informatics" university teacher at UTCN, they opted to fund the 
-                building of such a device, so that one student can glimpse at the world of electronics engeneering.
+                building of such a device, so that one student can glimpse at the world of electronics engineering.
             </p>
             <p>
-                As it turnes out, that student was I. It was a great oportunity to learn, so I did not turn it down.
+                As it turns out, that student was I. It was a great opportunity to learn, so I did not turn it down.
             </p>
             <p>
                 The end goal of the project is a Cable tester for multiple wire cables. It does:
@@ -79,13 +79,13 @@
             <ul>
                 <li>Check for typical and less typical wire errors:</li>
                 <ul>
-                    <li>Mismach type errors</li>
+                    <li>Mismatch type errors</li>
                     <li>Open circuit type errors</li>
                     <li>Multiple outputs type errors</li>
                     <li>Short circuit type errors</li>
                 </ul>
 
-                <li>Provide an easy to read interface for operators</li>
+                <li>Provide an easy-to-read interface for operators</li>
             </ul>
             <img id="Arduino_shield_prototype" src="Arduino_shield_prototype.jpg">
         </div>
@@ -99,22 +99,22 @@
         <div class="About">
             <p>
                 The problems encountered in the area of electronics are the high number of wires, and such the 
-                high numbers of components used, and the uncertainty of how many LED-s need to be powered by an arduino pin. 
-                Due to the high number wires, using a controll circuit for each one of them was out of the question<br>
+                high numbers of components used, and the uncertainty of how many LED-s need to be powered by an Arduino pin. 
+                Due to the high number wires, using a control circuit for each one of them was out of the question.<br>
                 The interface consists of a LED for each wire, a master OK LED, a master ERROR LED and 2 buttons (reset, next).
-                The wire LED-s light up wether signal is sent trough the wire or recived.
+                The wire LED-s light up whether signal is sent through the wire or received.
             </p>
             <img id="wd_1" src="wd_1.png">
             <p>
                 The prototype proved to be very difficult to build, again, due to the high number of components. In order
-                to fit everything I had to use 2 boards: one connected to the arduino like a shield, and the second one (much 
+                to fit everything, I had to use 2 boards: one connected to the Arduino like a shield, and the second one (much 
                 bigger) connected with 44 hand soldered wires.
             </p>
             <img id="wm_1" src="wm_1.jpg">
             <p>
-                After testing the prototype and making shure it works, I began working on the finished product. I am currently 
+                After testing the prototype and making sure it works, I began working on the finished product. I am currently 
                 waiting for the ordered PCB. It will merge the 2 boards used in the prototype so that the whole device 
-                is actually an arduino mega shield.
+                is actually an Arduino mega shield.
             </p>
             <img id="pcb-d_1" src="pcb-d_1.png">
         </div>
@@ -127,20 +127,20 @@
 
         <div class="About">
             <p>
-                This part is up to the mechanical engeneers at Renolith.
+                This part is up to the mechanical engineers at Renolith.
             </p>
             <!--<img id="chassis_1" src="chassis_1.jpg">-->
         </div>
 
         <div class="Section_Title">
             <h2>
-                Programing
+                Programming
             </h2>
         </div>
 
         <div class="About">
             <p>
-                The programing was done in Arduino language. It consists of three major parts:
+                The programming was done in Arduino language. It consists of three major parts:
                 <ul>
                     <li>The cable template matrix</li>
                     <li>The error matrix</li>
@@ -148,9 +148,9 @@
                 </ul>
             </p>
             <p>
-                The cable template matix holds information about which wire should be connected to which wire.<br>
+                The cable template matrix holds information about which wire should be connected to which wire.<br>
                 The error matrix encodes the types of errors found on each wire.<br>
-                The error detection algorithm runs trough all wires, one by one, sets each one as an output and checks 
+                The error detection algorithm runs through all wires, one by one, sets each one as an output and checks 
                 what other pins are connected to it. By consulting the template matrix, it determines if the signal was 
                 detected on correct wires. If not, the errors are added to the error matrix.
             </p>
