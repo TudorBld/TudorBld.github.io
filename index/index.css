@@ -2,6 +2,8 @@
 .redirection-section {
     text-align: center;
     margin: 60px 0;
+
+    background-color: var(--color-scope-bg);
 }
 
 .redirection-section .about-me {
@@ -26,10 +28,13 @@
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s;
+
+    background-color: var(--color-primary);
+    color: #fff;
 }
 
 .main-buttons .btn:hover {
-    background-color: #005fa3;
+    background-color: #4a9dbd;
 }
 
 /* ===== SCROLL BUTTON ===== */
@@ -44,7 +49,7 @@
     padding: 15px 25px;
     font-size: 1.2rem;
     border-radius: 8px;
-    background-color: #eee;
+    background-color: var(--color-discrete);
     border: 1px solid #ccc;
     cursor: pointer;
     transition: 0.2s;

@@ -5,11 +5,27 @@
     box-sizing: border-box;
 }
 
+/* ===== COLOR PALETTE ===== */
+:root {
+    /*--color-bg-main: #f7f9fb; #FCD6C5;*/       /* very light blue-ish background */
+    --color-bg-main: #f7f9fb;       /* very light blue-ish background */
+    --color-scope-bg: #eaf6fb;      /* soft blue (based on #add8e6) */
+
+    --color-primary: #5aaecf;       /* stronger blue for accents */
+    --color-accent: #fca17d;        /* coral accent */
+    --color-discrete: #eee;
+
+    --color-text-main: #222;
+    --color-text-soft: #555;
+
+    --color-border: #e0e0e0;
+}
+
 /* ===== BASE ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f7f7f7;
+    background-color: var(--color-bg-main);
     color: #222;
 }
 
@@ -22,7 +38,8 @@ body {
 
 /* ===== TOP RIBBON ===== */
 .top-ribbon {
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: var(--color-primary);
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
@@ -36,6 +53,10 @@ body {
 .logo {
     font-weight: bold;
     font-size: 1.2rem;
+
+    padding: 5px;
+    background-color: var(--color-accent);
+    border-radius: 10px;
 }
 
 .nav a {
@@ -50,9 +71,8 @@ body {
 }
 
 /* ===== TITLE ===== */
-.title-section {
-    margin: 50px 0 30px;
-    text-align: center;
+.title {
+    margin-bottom: 50px;
 }
 
 .title-section h1 {
@@ -61,22 +81,13 @@ body {
 
 /* ===== SCOPE (TOP BLOCK) ===== */
 .Scope {
-    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
-    padding: 60px 100px 80px;
-    margin-bottom: 40px;
+    background: var(--color-scope-bg);
+    padding: 10px 100px 10px;
+    margin-bottom: 0px;
     border-radius: 10px;
 
     /* subtle elevation */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-/* tighten spacing inside Scope */
-.Scope .title-section {
-    margin: 0 0 30px;
-}
-
-.Scope .scope-section {
-    margin-bottom: 0;
 }
 
 /* ===== SCOPE SECTION ===== */
@@ -84,20 +95,22 @@ body {
     display: flex;
     gap: 40px;
     align-items: center;
-    margin-bottom: 60px;
+
+    justify-content: center;
 }
 
 .scope-text {
     flex: 1;
     font-size: 1.1rem;
+    max-width: 30%;
 }
 
 .scope-image {
     flex: 1;
+    max-width: 40%;
 }
 
 .scope-image img {
-    width: 100%;
     border-radius: 10px;
 }
 
