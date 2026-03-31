@@ -7,6 +7,9 @@
 
     <!-- Shared styles -->
     <link rel="stylesheet" href="shared/styles.css">
+
+    <!-- Index-specific styles -->
+    <link rel="stylesheet" href="index/index.css">
 </head>
 <body>
 
@@ -39,10 +42,42 @@
                     THIS_SHOULD_BE_2_TO_4_SENTENCES_MAX.
                 </p>
             </div>
-
             <div class="scope-image">
                 <img src="index/images/placeholder.jpg" alt="Scope Image">
             </div>
+        </section>
+
+        <!-- Redirection Section with centered scroll button -->
+        <section class="redirection-section">
+            <div class="about-me">
+                <p>
+                    SHORT_DESCRIPTION_OF_ME_PLACEHOLDER.
+                    A couple of sentences that give a quick snapshot of who I am.
+                </p>
+            </div>
+
+            <div class="main-buttons">
+                <a href="projects/projects.html" class="btn">Projects</a>
+                <a href="gallery/gallery.html" class="btn">Gallery</a>
+                <a href="tutorials/tutorials.html" class="btn">Tutorials</a>
+                <a href="articles/articles.html" class="btn">Articles</a>
+            </div>
+
+            <!-- Scroll button centered -->
+            <div class="scroll-btn-wrapper">
+                <button class="more-btn" onclick="document.getElementById('more-about-me').scrollIntoView({ behavior: 'smooth' });">
+                    More about me ↓
+                </button>
+            </div>
+        </section>
+
+        <!-- Lower About Me Section (scroll target) -->
+        <section id="more-about-me" class="hidden-section">
+            <h2>About Me</h2>
+            <p>
+                LONG_MESSAGE_FROM_ME_PLACEHOLDER.  
+                This section is lower on the page and can be reached by clicking the "More about me" button above or by scrolling naturally.
+            </p>
         </section>
 
     </main>
@@ -50,7 +85,6 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-
             <div class="footer-section">
                 <h3>Contact</h3>
                 <p>EMAIL_PLACEHOLDER</p>
@@ -67,7 +101,6 @@
                 <h3>Other</h3>
                 <p>ADDITIONAL_INFO_PLACEHOLDER</p>
             </div>
-
         </div>
     </footer>
 

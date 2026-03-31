@@ -1,0 +1,77 @@
+/* ===== REDIRECTION SECTION ===== */
+.redirection-section {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.redirection-section .about-me {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons leading to other pages */
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.main-buttons .btn:hover {
+    background-color: #005fa3;
+}
+
+/* ===== SCROLL BUTTON ===== */
+.scroll-btn-wrapper {
+    height: 50vh; /* takes half the viewport height */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+}
+
+.more-btn {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.more-btn:hover {
+    background-color: #ddd;
+}
+
+/* ===== LOWER ABOUT ME SECTION ===== */
+.hidden-section {
+    margin: 80px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .main-buttons {
+        flex-direction: column;
+    }
+
+    .scroll-btn-wrapper {
+        height: auto; /* allow normal flow on small screens */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
