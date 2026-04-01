@@ -102,7 +102,13 @@ body {
 .scope-text {
     flex: 1;
     font-size: 1.1rem;
-    max-width: 30%;
+    max-width: 40%;
+
+    text-align: center;
+}
+
+.scope-text .scope-description p{
+    padding-bottom: 10px;
 }
 
 .scope-image {
@@ -112,6 +118,7 @@ body {
 
 .scope-image img {
     border-radius: 10px;
+    max-width: 100%;
 }
 
 /* ===== FOOTER ===== */
