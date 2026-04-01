@@ -13,7 +13,7 @@
 
     --color-primary: #5aaecf;       /* stronger blue for accents */
     --color-accent: #fca17d;        /* coral accent */
-    --color-discrete: #eee;
+    --color-discrete: #f7f7f7;
 
     --color-text-main: #222;
     --color-text-soft: #555;
@@ -119,6 +119,7 @@ body {
 .scope-image img {
     border-radius: 10px;
     max-width: 100%;
+    max-height: 500px;
 }
 
 /* ===== FOOTER ===== */
