@@ -112,8 +112,8 @@ body {
 }
 
 .scope-image {
-    flex: 1;
     max-width: 40%;
+    justify-content: center;
 }
 
 .scope-image img {
