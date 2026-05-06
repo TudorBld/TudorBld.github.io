@@ -57,6 +57,9 @@ body {
     padding: 5px;
     background-color: var(--color-accent);
     border-radius: 10px;
+
+    text-decoration: none;  /* remove underline */
+    color: inherit;         /* keep same text color */
 }
 
 .nav a {
