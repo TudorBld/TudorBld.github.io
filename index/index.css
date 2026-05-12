@@ -11,7 +11,19 @@
 .redirection-section .about-me {
     
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 10px auto;
+
+}
+
+/* Author styling */
+.about-me .quote-author {
+    margin-bottom: 20px;
+    /*font-size: 0.95rem;*/
+    opacity: 1;
+    text-align: left;
+    /*letter-spacing: 1px;*/
 }
 
 /* Buttons leading to other pages */
